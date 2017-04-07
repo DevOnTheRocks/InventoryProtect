@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'org.spongepowered.plugin' version '0.6'
+}
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+group = 'rocks.devonthe.inventoryprotect'
+version = '0.1.0'
+description = 'A Sponge plugin that allows you to save and restore player inventories.'
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven {
+        name = 'sponge'
+        url = 'http://repo.spongepowered.org/maven'
+    }
+}
+
+dependencies {
+    compile('org.spongepowered:spongeforge:1.10.2-2202-5.1.0-BETA-2096:dev')
+}
